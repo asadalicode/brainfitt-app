@@ -1,0 +1,69 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    min-height: 100vh;
+    background-color: #59738b;
+    padding: 0 !important;
+    padding-top: 5rem !important;
+    .titleBar {
+        .skipText {
+            font-size: 1.6rem;
+            right: 10%;
+            position: absolute;
+            @include for-size(phone-only) {
+                font-size: 1.3rem !important;
+                right: 3%;
+            }
+        }
+    }
+    .singleCarouselContainer {
+        padding-left: 0 !important;
+        justify-content: center;
+    }
+    .carousel{
+        padding-left: 5%;
+    }
+    .carouselContainer {
+        padding-left: 5%;
+        overflow-x: auto;
+        display: flex;
+        .carouselSlide {
+            width: 480px;
+        }
+        .carouselSlider {
+            padding-left: 150px;
+        }
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: block;
+            height: 95px;
+            background-color: transparent;
+        }
+    }
+    .clientReview {
+        font-size: 1.2rem !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        @include for-size(phone-only){
+            width: 95%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @include for-size(tablet-portrait-up) {
+        .carouselContainer {
+            flex-direction: column;
+            align-items: center;
+            padding-left: unset !important;
+        }
+    }
+    @include for-size(phone-only) {
+        .carouselContainer {
+            flex-direction: column;
+            padding-left: unset !important;
+            .carouselSlide {
+                width: 100%;
+            }
+        }
+    }
+}

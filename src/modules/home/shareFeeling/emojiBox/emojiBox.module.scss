@@ -1,0 +1,20 @@
+.container {
+    .emojiContainer {
+        height: 100px;
+        border-radius: 10px;
+        background-color: rgba(243, 242, 242, 0.4);
+        margin-bottom: 5px;
+        &:hover {
+            border: 2px solid var(--white);
+        }
+    }
+    span{
+        font-size: 0.8rem;
+        font-weight: 100;
+        line-height: 15px;
+        display: inline-block;
+    }
+    .selectedEmoji {
+        border: 2px solid var(--white) !important;
+    }
+}

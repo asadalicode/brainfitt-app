@@ -1,0 +1,14 @@
+.container {
+    z-index: 9999;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    .title {
+        color: var(--black);
+        font-weight: 500;
+    }
+}
+.buyButtonContainer {
+    width: 80% !important;
+    margin: auto;
+}

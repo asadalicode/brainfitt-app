@@ -1,0 +1,64 @@
+@import "../../../../theme/mixings.scss";
+
+.card {
+  max-height: 78vh;
+  min-height: 50vh;
+  .description {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+  }
+  .priceMainContainer{
+    border-bottom: 1px solid white;
+    .priceContainer {
+      text-align: center;
+      font-family: 300;
+      padding-bottom: 0.4rem;
+      position: relative;
+      font-size: 2rem;
+      padding-left: 10px;
+      .currency {
+        font-size: 1.5vw;
+        position: relative;
+        font-weight: 300;
+        top: -8px;
+      }
+      .duration {
+        font-size: 1vw;
+        font-weight: lighter;
+        color: var(--white);
+      }
+      @include for-size(phone-only) {
+        font-size: 2rem !important;
+  
+        .currency,
+        .duration {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+    .allowUser{
+      font-weight: 100;
+      height: 22px;
+    }
+  }
+  .listDescription{
+    ul{
+      margin-top: 1.1rem;
+      max-height: 30vh;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      li{
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .whiteButton{
+    width: 70%;
+    height: 50px;
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,160 @@
+@import "../../../../theme/mixings.scss";
+
+.signupBox {
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    opacity: 1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    .fieldWidth {
+        width: 63%;
+    }
+    .description {
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-bottom: 0.6rem !important;
+        width: 57%;
+        @include for-size(tablet-portrait-up) {
+            width: 57% !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+    .chatIcon {
+        height: 20px;
+        width: 20px;
+    }
+    .labelText {
+        font-size: 0.9rem;
+    }
+    .second {
+        font-size: 1.5rem !important;
+        > span {
+            font-size: 0.9rem;
+            position: relative;
+            left: -3px;
+        }
+    }
+    .phoneInput {
+        width: 100%;
+        opacity: 1;
+        border: 0;
+        color: white;
+        border-radius: 18px;
+        background-color: rgba(255, 255, 255, 0.3);
+        &::placeholder {
+            color: black;
+        }
+    }
+    .submitButton {
+        width: 60%;
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+        font-size: 1.2rem !important;
+    }
+    .otpFieldBox {
+        width: 64%;
+        margin: auto;
+        gap: 10px;
+        @include for-size(tablet-portrait-up) {
+            width: 90%;
+        }
+        @include for-size(phone-only) {
+            width: 100%;
+        }
+        > div {
+            gap: 10px;
+        }
+        .inputField {
+            height: 60px;
+            border-radius: 7px;
+            background-color: rgba(255, 255, 255, 0.3);
+            object-fit: scale-down;
+            > input {
+                width: 100% !important;
+                text-align: center;
+                height: 100%;
+                background: transparent;
+                outline: none;
+                font-size: 1.5rem !important;
+                border: none;
+            }
+            @include for-size(tablet-portrait-up) {
+                height: 82px;
+            }
+        }
+        @include for-size(big-desktop-up) {
+            > div {
+                gap: 20px;
+            }
+            .inputField {
+                height: 90px;
+            }
+        }
+    }
+    @include for-size(phone-only) {
+        margin-bottom: 3rem;
+        .submitButton,
+        .fieldWidth {
+            width: 100%;
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: 3rem;
+        .submitButton,
+        .fieldWidth {
+            width: 90%;
+        }
+    }
+    @include for-size(big-desktop-up) {
+        .title {
+            font-size: 1.6rem !important;
+            margin-top: 1.5rem !important;
+        }
+        .otpFieldBox {
+            padding: 1.2rem 0 !important;
+        }
+        .submitButton {
+            height: 50px !important;
+            margin-bottom: 2rem !important;
+            width: 58%;
+        }
+        .phoneInput {
+            height: 50px;
+            border-radius: 30px;
+        }
+        .resendTextBox {
+            margin: 1rem 0;
+            .labelText {
+                font-size: 1rem;
+            }
+        }
+        .second {
+            margin-bottom: 1rem !important;
+            font-size: 1.6rem;
+            > span {
+                font-size: 1rem;
+                position: relative;
+                left: -4px;
+            }
+        }
+        .phoneNumberLabel {
+            margin-bottom: 1rem !important;
+        }
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1.9rem !important;
+            margin-top: 1rem !important;
+        }
+    }
+}
+
+@include for-size(big-desktop-up) {
+    .mainHeading {
+        font-size: 2rem !important;
+        margin-bottom: 0.9rem !important;
+    }
+}

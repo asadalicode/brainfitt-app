@@ -1,0 +1,78 @@
+@import "../../../theme/mixings.scss";
+
+.unStappableContainer {
+    padding-top: 2.6rem;
+    .groupButton {
+        width: 100%;
+        button {
+            border: 1px solid var(--white);
+            background-color: rgba(68, 66, 66, 0.3);
+            color: var(--white);
+            width: 50%;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 70% !important;
+        }
+    }
+    .leftContainer {
+        border-right: 2px solid var(--white);
+        @include for-size(phone-only) {
+            border: none;
+        }
+        @include for-size(tablet-portrait-up) {
+            border: none;
+        }
+    }
+    .title {
+        width: 49%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        @include for-size(phone-only) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+    .paidSessionContainer {
+        width: 70%;
+    }
+    .steppersContainer {
+        width: 70%;
+        height: 78vh;
+        overflow-y: scroll;
+        margin: auto;
+        flex-direction: column;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        padding-bottom: 5rem;
+        @include for-size(phone-only) {
+            width: 90%;
+            padding-bottom: 10rem;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 65%;
+            padding-bottom: 10rem;
+        }
+    }
+}
+.bottomTimerContainer {
+    width: 65%;
+    margin: auto;
+    @include for-size(phone-only) {
+        width: 90%;
+    }
+    .bottomTimer {
+        position: absolute;
+        bottom: 0;
+        width: 33%;
+        z-index: 999;
+        @include for-size(phone-only) {
+            width: 84%;
+        }
+    }
+}

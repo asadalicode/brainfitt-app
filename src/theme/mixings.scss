@@ -1,0 +1,60 @@
+
+@mixin full-screen-background-image($background-image) {
+  background: url($background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+
+@mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width: 599px) {
+        @content;
+      }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) and (max-width: 899px) {
+        @content;
+      }
+    } @else if $size == tablet-landscape-up {
+      @media (min-width: 900px) {
+        @content;
+      }
+    } @else if $size == ipad-pro {
+      @media (min-width: 900px) and (max-width: 1024px) {
+        @content;
+      }
+    } @else if $size == desktop-up {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1800px) {
+        @content;
+      }
+    }
+  }
+  

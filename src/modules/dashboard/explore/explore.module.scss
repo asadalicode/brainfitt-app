@@ -1,0 +1,38 @@
+@import "../../../theme/mixings.scss";
+
+.bottomAudioPlayer {
+    background-color: rgba(29, 29, 29, 0.6) !important;
+    backdrop-filter: blur(8px);
+    .content {
+        margin: auto;
+        width: 90%;
+    }
+    @include for-size(phone-only) {
+        bottom: 9%;
+        left: 7px;
+        right: 0px !important;
+        width: 96%;
+        border-radius: 1rem;
+        border: 2px solid var(--white);
+        .content {
+            width: 100% !important;
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        bottom: 8%;
+        right: 0px !important;
+        width: 80%;
+        left: 10%;
+        border-radius: 1rem;
+        border: 2px solid var(--white);
+        .content {
+            width: 100% !important;
+        }
+    }
+}
+.seePlanButton{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    z-index: 9999;
+}

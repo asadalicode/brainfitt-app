@@ -1,0 +1,57 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("../../../assets/images/homeModule/premiumbg.png");
+    min-height: 100vh;
+    padding-top: 2rem;
+    .backButton {
+        position: relative;
+        top: 7px;
+        height: 35px;
+        width: 35px;
+        left: 18%;
+        @include for-size(tablet-portrait-up){
+            left: 0%;
+        }
+        @include for-size(phone-only) {
+            left: 0%;
+        }
+    }
+    .title {
+        width: 40%;
+        @include for-size(phone-only) {
+            width: 100%;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 70%;
+        }
+    }
+    .container {
+        @include for-size(tablet-portrait-up) {
+            width: 60%;
+            .premiumBtn {
+                margin-top: 10px;
+            }
+        }
+    }
+    .premiumBtn {
+        width: 49% !important;
+        &:nth-child(even) {
+            margin-left: 6px;
+        }
+    }
+    .premiumContainer {
+        border: 2px solid #ffffff;
+        border-radius: 30px;
+
+        > div {
+            border-right: 2px solid #ffffff;
+            @include for-size(phone-only) {
+                border: none;
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

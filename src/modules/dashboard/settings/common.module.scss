@@ -1,0 +1,17 @@
+@import '../../../theme/mixings.scss';
+
+.contentContainer {
+    height: 85vh;
+    overflow: scroll;
+    padding-bottom: 2rem;
+    padding-bottom: 5rem;
+    @include for-size(phone-only) {
+        padding-bottom: 10rem;
+    }
+    @include for-size(tablet-portrait-up){
+        padding-bottom: 8rem;
+    }
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
+}

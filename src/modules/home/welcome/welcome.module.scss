@@ -1,0 +1,94 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("");
+    min-height: 100vh;
+    padding: 4rem 0;
+    padding-bottom: 1rem;
+    .welcome {
+        font-size: 2.5rem !important;
+        font-weight: bolder;
+    }
+    .leftContainer {
+        width: 300px;
+        .imageContainer {
+            height: 300px;
+            border-radius: 50%;
+            width: 300px;
+            border: 3px solid #ffffff;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: unset;
+            align-items: center;
+        }
+        @include for-size(phone-only) {
+            width: unset;
+            align-items: center;
+        }
+    }
+    .rightPortion {
+        @include for-size(tablet-portrait-up) {
+            justify-content: center !important;
+        }
+        @include for-size(phone-only) {
+            justify-content: center !important;
+            padding: 0 !important;
+        }
+        .videoContainer {
+            height: 300px;
+            border-radius: 16px;
+            width: 94%;
+            margin-left: 5%;
+            border: 3px solid #ffffff;
+            .video {
+                border-radius: 13px;
+                width: 100%;
+                height: 100%;
+            }
+
+            @include for-size(tablet-portrait-up) {
+                width: 65%;
+                margin-left: 0 !important;
+                margin-top: 1.4rem;
+            }
+            // @include for-size(tablet-landscape-up){
+            //     width: 65%;
+            //     margin-left: 0 !important;
+            // }
+            @include for-size(phone-only) {
+                margin-left: 0 !important;
+                margin-top: 1.4rem;
+            }
+        }
+    }
+    .spiner{
+        height: 50vh;
+    }
+    .buttonContainer {
+        margin-right: 5vw;
+
+        @include for-size(big-desktop-up) {
+            margin-right: 13vw;
+        }
+        @include for-size(tablet-portrait-up) {
+            justify-content: center !important;
+            .submitButton {
+                width: 50%;
+            }
+        }
+        @include for-size(phone-only) {
+            margin-right: 0;
+            margin-top: 3rem;
+        }
+        @include for-size(tablet-portrait-up) {
+            margin-right: 0;
+            margin-top: 4rem;
+        }
+        // @include for-size(tablet-landscape-up) {
+        //     justify-content: center !important;
+        //     .submitButton {
+        //         width: 50%;
+        //     }
+        // }
+    }
+}

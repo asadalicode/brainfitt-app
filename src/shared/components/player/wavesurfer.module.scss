@@ -1,0 +1,128 @@
+@import "../../../theme/mixings.scss";
+@mixin common-control-btn($wh) {
+  width: $wh;
+  height: $wh;
+  cursor: pointer;
+}
+.leftPortion {
+  .title {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+  .imageBox {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    @include for-size(phone-only) {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .artistName {
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: -4px;
+  }
+  .imgHeart {
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+  }
+}
+.linearProgress {
+  height: 2.5px !important;
+  top: -7px !important;
+}
+.container {
+  margin-right: 4%;
+  .middlePortion {
+    flex: 1;
+    .buttonControlBox {
+      justify-content: center;
+    }
+    .controlBtn {
+      @include common-control-btn(20px);
+      margin-top: 5px;
+    }
+    .playPause {
+      width: 30px;
+      height: 30px;
+    }
+    .time {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+    }
+    .waveSurferBox {
+      width: 100%;
+      margin-top: 0.8rem;
+      .waveSurferContainer {
+        width: 90%;
+        margin: auto;
+        .hidePlayer {
+          opacity: 0 !important;
+        }
+      }
+    }
+    @include for-size(phone-only) {
+      .waveSurferBox {
+        margin-top: 0.5rem;
+        .waveSurferContainer {
+          width: 90%;
+        }
+      }
+    }
+
+    @include for-size(phone-only) {
+      padding: 0 1rem;
+      .buttonControlBox {
+        justify-content: space-between;
+      }
+    }
+    @include for-size(tablet-portrait-up) {
+      padding: 0 1rem;
+      .buttonControlBox {
+        justify-content: space-between;
+      }
+    }
+  }
+  .rightPortion {
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      min-width: 35px;
+      height: 5px;
+      background: #dddddd;
+      outline: none;
+      border-radius: 10px;
+      -webkit-transition: 0.2s;
+      transition: opacity 0.2s;
+      margin-top: 10px;
+      cursor: pointer;
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+    .playList {
+      @include common-control-btn(20px);
+      margin-left: 20px;
+    }
+  }
+}

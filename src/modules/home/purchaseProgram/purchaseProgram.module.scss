@@ -1,0 +1,12 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("../../../assets/images/homeModule/purchaseProgrambg.png");
+    min-height: 100vh;
+    @include for-size(tablet-portrait-up) {
+        h2 {
+            justify-content: center;
+            display: flex;
+        }
+    }
+}

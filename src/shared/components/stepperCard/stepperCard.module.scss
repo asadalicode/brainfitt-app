@@ -1,0 +1,57 @@
+@import "../../../theme/mixings.scss";
+
+.stepper {
+    font-size: 0.8rem;
+    .label {
+        display: flex;
+        border-radius: 50%;
+        background-color: rgba(253, 250, 250, 0.2);
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .selectedLabel,
+    .selectedBox {
+        border: 2px solid var(--white);
+    }
+    .selectedConnectedLine {
+        background-color: var(--white) !important;
+    }
+    .connectedLine {
+        height: 5px;
+        width: 30px;
+        background-color: rgba(253, 250, 250, 0.2);
+    }
+    .box {
+        background-color: rgba(253, 250, 250, 0.2);
+        height: 60px;
+        flex: 1;
+        padding-left: 1rem;
+        border-radius: 10px;
+        @include for-size(tablet-portrait-up) {
+            width: 80%;
+        }
+    }
+    @media (max-width: 1212px) and (min-width: 1153px) {
+        .titleSession {
+            font-size: 0.7rem;
+        }
+    }
+    @media (max-width: 1152px) and (min-width: 1033px) {
+        .titleSession {
+            font-size: 0.6rem;
+        }
+    }
+    @media (max-width: 1032px) and (min-width: 992px) {
+        .titleSession {
+            font-size: 0.5rem;
+        }
+    }
+}
+.verticalConnectedLine {
+    height: 30px;
+    width: 5px;
+    margin-left: 1.8rem;
+    background-color: rgba(253, 250, 250, 0.1);
+}

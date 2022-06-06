@@ -1,0 +1,17 @@
+export const TasksEnum = {
+  preEmoji: "PRE_MOOD",
+  preIntroductorySession: 2,
+  notificationPopup: 3,
+  introductorySession: 4,
+  audio: "AUDIO",
+  postEmoji: "POST_MOOD",
+  completeSessionPopup: 6,
+  form: "FORM",
+  timer: 7,
+  report: "COMPARISON_REPORT",
+  moodComparision: "MOOD_COMPARISON",
+  postAssessment: "POST_ASSESSMENT",
+  eBooklet: 9,
+  pdf: "PDF",
+  lession: "LESSON",
+};

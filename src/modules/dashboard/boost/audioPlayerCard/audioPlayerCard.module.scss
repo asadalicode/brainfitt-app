@@ -1,0 +1,73 @@
+@import "../../../../theme/mixings.scss";
+
+.container {
+    .lockIcon {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imageContainer {
+        height: 170px;
+        opacity: 1;
+        margin-bottom: 0.7rem;
+        border-radius: 15px;
+        backdrop-filter: blur(4px);
+        background-color: rgba(255, 255, 255, 0.4);
+        overflow: hidden;
+        @include for-size(big-desktop-up) {
+            height: 200px;
+        }
+        .horizontalFirstCircle {
+            height: 181px;
+            width: 180px;
+            @include for-size(big-desktop-up) {
+                height: 210px;
+                width: 210px;
+            }
+           
+        }
+        .verticalFirstcircle {
+            height: 160px;
+            width: 160px;
+            @include for-size(big-desktop-up) {
+                height: 210px;
+                width: 210px;
+            }
+            @include for-size(phone-only){
+                height: 140px;
+                width: 140px;
+            }
+        }
+        .firstCircle {
+            background-color: rgba(77, 76, 76, 0.1);
+            padding: 0.5rem;
+            .secondCircle {
+                background-color: rgba(88, 87, 87, 0.2);
+                height: 100%;
+                width: 100%;
+                padding: 0.4rem;
+            }
+            .thirdCircle {
+                background-color: rgba(136, 133, 133, 0.2);
+                height: 100%;
+                width: 100%;
+                .image {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .play {
+                    position: absolute;
+                    top: 40%;
+                    left: 46%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

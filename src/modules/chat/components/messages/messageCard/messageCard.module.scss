@@ -1,0 +1,26 @@
+@import "../../../../../theme/mixings.scss";
+
+.container {
+    .messageContainer {
+        width: 55%;
+        @include for-size(phone-only) {
+            width: 90%;
+        }
+        .message {
+            font-size: 0.9rem;
+            backdrop-filter: blur(8px);
+            padding: 0.9rem;
+            border-radius: 5px;
+            margin: 0;
+        }
+        .receiverTextDesign {
+            background-color: rgba(34, 33, 33, 0.6);
+        }
+        .senderTextDesign {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .time {
+            justify-content: flex-end;
+        }
+    }
+}

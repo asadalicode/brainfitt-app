@@ -1,0 +1,286 @@
+@import "./assets/fonts/comfortaa/stylesheet.css";
+@import "./theme/mixings.scss";
+:root {
+  --black: #000000;
+  --white: #fff;
+}
+
+//styles
+
+$white: var(--white);
+$black: var(--black);
+
+.unselected-btn {
+  border-radius: 48px !important;
+  background-color: transparent;
+  border: 2px solid $white;
+  color: $white !important;
+  padding: 8px 25px !important;
+  font-size: 14px;
+  @include for-size(tablet-landscape-up) {
+    font-size: 22px;
+    padding: 8px 30px !important;
+  }
+  @include for-size(phone-only) {
+    margin-top: 3rem !important;
+    font-size: 22px;
+    width: 100%;
+  }
+}
+.white-btn {
+  border-radius: 48px !important;
+  background-color: $white !important;
+  border: none;
+  color: $black !important;
+  padding: 8px 28px !important;
+  font-size: 1rem !important;
+  font-weight: 600;
+  > span {
+    margin-left: 0.5rem !important ;
+  }
+  @include for-size(tablet-landscape-up) {
+    font-size: 22px;
+    padding: 8px 30px !important;
+  }
+  @include for-size(phone-only) {
+    margin-top: 3rem !important;
+    font-size: 22px;
+    width: 100%;
+  }
+}
+.text-transform-none {
+  text-transform: none !important;
+}
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+.react-multiple-carousel__arrow {
+  bottom: -11px;
+  background-color: transparent !important;
+}
+.react-multiple-carousel__arrow::before {
+  color: $black !important;
+}
+.react-multi-carousel-dot button {
+  border: none !important;
+  background-color: $black;
+  width: 5px !important;
+  height: 4px !important;
+}
+.react-multi-carousel-dot--active button {
+  width: 23px !important;
+  border-radius: 0 !important;
+}
+h2 {
+  font-weight: bold !important;
+
+  @include for-size(big-desktop-up) {
+    font-size: 3vw;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 2.5vw;
+  }
+
+  @include for-size(phone-only) {
+    font-size: 2vw;
+  }
+}
+h3 {
+  font-weight: bold;
+
+  @include for-size(big-desktop-up) {
+    font-size: 2.4vw;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    font-size: 2vw;
+  }
+
+  @include for-size(phone-only) {
+    font-size: 1.4rem;
+  }
+}
+h5 {
+  font-weight: 300;
+  @include for-size(phone-only) {
+    font-size: 0.8rem !important;
+  }
+}
+span {
+  @include for-size(phone-only) {
+    font-size: 0.8rem !important;
+  }
+}
+
+.intl-tel-input .country-list .flag-box,
+.intl-tel-input .country-list .country-name {
+  color: #999;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  background-color: transparent !important;
+}
+
+.intl-tel-input .flag-container .arrow {
+  display: none;
+}
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 35px !important;
+}
+
+.invisible {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+
+.box-border {
+  border: 2px solid var(--white);
+}
+
+// react calendar
+.react-calendar__tile--active {
+  background-color: transparent !important;
+  border: 1px solid var(--white) !important;
+  border-radius: 50%;
+}
+.react-calendar__tile--now {
+  background-color: transparent !important;
+}
+.react-calendar__tile {
+  line-height: 25px !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  pointer-events: none !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth > abbr {
+  color: transparent !important;
+}
+.react-calendar__navigation {
+  width: 90% !important;
+  margin: auto !important;
+  margin-bottom: 1rem !important;
+}
+.selected-flag {
+  width: 60px !important;
+  margin-left: 5px !important;
+  padding: 4px !important;
+  background-color: unset !important;
+}
+
+.iti-flag {
+  width: 20px !important;
+  height: 20px !important;
+  background-position-y: 5px !important;
+  border-radius: 50%;
+  margin-right: unset !important;
+  margin-top: 2px !important;
+  @include for-size(big-desktop-up) {
+    margin-top: 10px !important;
+  }
+}
+.selected-dial-code {
+  border-right: 1px solid rgb(95, 94, 94);
+  color: var(--black) !important;
+  font-weight: 600;
+  padding-left: 8px !important;
+  padding-right: 0.5rem !important;
+}
+.react-datepicker__year-option {
+  color: #000 !important;
+}
+.react-datepicker__year-read-view--selected-year {
+  color: #000 !important;
+}
+
+.StripeElement {
+  display: block;
+  margin: 10px 0 20px 0;
+  max-width: 500px;
+  padding: 10px 14px;
+  font-size: 1em;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background: rgba(236, 235, 235, 0.3);
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus,
+.StripeElement--focus {
+  box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px, rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.StripeElement.IdealBankElement,
+.StripeElement.FpxBankElement,
+.StripeElement.PaymentRequestButton {
+  padding: 0;
+}
+
+.StripeElement.PaymentRequestButton {
+  height: 40px;
+}
+
+.socialShare {
+  .st-inline-share-buttons {
+    div[data-network="messenger"] {
+      display: inline-block !important;
+      height: 42px !important;
+      min-width: 20px !important;
+      border-radius: 50% !important;
+      background-color: rgba(243, 242, 242, 0.66) !important;
+      .st-label {
+        display: none !important;
+      }
+      img {
+        content: url("./assets/images/messenger.svg");
+      }
+    }
+    div[data-network="whatsapp"] {
+      display: inline-block !important;
+      height: 42px !important;
+      min-width: 20px !important;
+      border-radius: 50% !important;
+      background-color: rgba(243, 242, 242, 0.66) !important;
+      .st-label {
+        display: none !important;
+      }
+      img {
+        content: url("./assets/images/whatsapp.svg");
+      }
+    }
+    div[data-network="skype"] {
+      display: inline-block !important;
+      height: 42px !important;
+      min-width: 20px !important;
+      border-radius: 50% !important;
+      background-color: rgba(243, 242, 242, 0.66) !important;
+      .st-label {
+        display: none !important;
+      }
+      img {
+        content: url("./assets/images/skype.svg");
+      }
+    }
+    div[data-network="twitter"] {
+      display: inline-block !important;
+      height: 42px !important;
+      min-width: 20px !important;
+      border-radius: 50% !important;
+      background-color: rgba(243, 242, 242, 0.66) !important;
+      .st-label {
+        display: none !important;
+      }
+      img {
+        content: url("./assets/images/twitter.svg");
+      }
+    }
+  }
+}

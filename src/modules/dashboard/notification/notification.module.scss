@@ -1,0 +1,57 @@
+@import "../../../theme/mixings.scss";
+
+.container {
+    width: 90%;
+    @include for-size(phone-only) {
+        width: 100%;
+    }
+    @include for-size(tablet-portrait-up){
+        width: 100%;
+    }
+    .header {
+        position: relative;
+        @include for-size(phone-only) {
+            justify-content: center;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            .backArrow {
+                position: absolute;
+                left: 2%;
+                top: 1rem;
+            }
+        }
+        @include for-size(tablet-portrait-up) {
+            margin-left: 0 !important;
+            justify-content: center;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            .backArrow {
+                position: absolute;
+                left: 2%;
+                top: 1rem;
+            }
+        }
+        .title {
+            @include for-size(phone-only) {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+    .notificationContainer {
+        width: 50%;
+        height: 78vh;
+        overflow: scroll;
+        padding-bottom: 5rem;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 60%;
+            padding-bottom: 8rem;
+        }
+        @include for-size(phone-only) {
+            width: 100%;
+            padding-bottom: 7rem;
+        }
+    }
+}

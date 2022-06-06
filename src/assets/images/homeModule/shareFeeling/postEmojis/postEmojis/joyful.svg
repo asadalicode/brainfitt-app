@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74.949" height="74.95" viewBox="0 0 74.949 74.95">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.573" cy="0.502" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fddb35"/>
+      <stop offset="0.482" stop-color="#fcd934"/>
+      <stop offset="0.655" stop-color="#fcd232"/>
+      <stop offset="0.779" stop-color="#fbc62e"/>
+      <stop offset="0.879" stop-color="#f9b528"/>
+      <stop offset="0.964" stop-color="#f89f21"/>
+      <stop offset="1" stop-color="#f7941e"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_56566" data-name="Group 56566" transform="translate(-1917.945 -899.094)">
+    <circle id="Ellipse_962" data-name="Ellipse 962" cx="37.19" cy="37.19" r="37.19" transform="matrix(0.008, -1, 1, 0.008, 1917.945, 973.471)" fill="url(#radial-gradient)"/>
+    <path id="Path_88126" data-name="Path 88126" d="M1997.723,945.977a37.191,37.191,0,0,1-58.987,30.132,39.742,39.742,0,0,0,58.14-35.215c0-1.194-.051-2.38-.162-3.549A37.155,37.155,0,0,1,1997.723,945.977Z" transform="translate(-5.111 -9.405)" fill="#fbd69e" style="mix-blend-mode: multiply;isolation: isolate"/>
+    <g id="Group_56565" data-name="Group 56565" transform="translate(1939.271 924.389)">
+      <path id="Path_88127" data-name="Path 88127" d="M1980.766,942.507h.115a4.975,4.975,0,0,1,4.03,2.521c.312.469.894.2.894-.421v-3.333c0-4.771-2.208-8.638-4.932-8.638h-.1c-2.724,0-4.932,3.867-4.932,8.638v3.333c0,.623.583.89.894.421A4.975,4.975,0,0,1,1980.766,942.507Z" transform="translate(-1953.505 -932.636)" fill="#87594a"/>
+      <path id="Path_88128" data-name="Path 88128" d="M1951.147,942.507h.115a4.974,4.974,0,0,1,4.03,2.521c.312.469.894.2.894-.421v-3.333c0-4.771-2.208-8.638-4.932-8.638h-.1c-2.724,0-4.931,3.867-4.931,8.638v3.333c0,.623.582.89.894.421A4.974,4.974,0,0,1,1951.147,942.507Z" transform="translate(-1946.223 -932.636)" fill="#87594a"/>
+    </g>
+    <path id="Path_88129" data-name="Path 88129" d="M1960.191,971.506h-.535c-8.911,0-16.792-6.212-21.59-15.734a.9.9,0,0,0-1.622.779c4.274,11.166,13.067,18.825,23.223,18.825h.525c10.19,0,19.009-7.712,23.268-18.938a.9.9,0,0,0-1.624-.776C1977.042,965.246,1969.135,971.506,1960.191,971.506Z" transform="translate(-4.53 -13.784)" fill="#87594a"/>
+  </g>
+</svg>

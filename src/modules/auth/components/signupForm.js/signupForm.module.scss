@@ -1,0 +1,132 @@
+@import "../../../../theme/mixings.scss";
+
+.signupBox {
+    // transform: translateZ(0px);
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    opacity: 1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    .description {
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-bottom: 0.6rem !important;
+    }
+    .phoneNumberLabel {
+        font-size: 0.9rem;
+        font-weight: 100;
+        width: 60% !important;
+    }
+    .invalidPhoneNumberLabel {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 60% !important;
+        text-shadow: 1px 1px 2px #000000
+    }
+    .signWithText {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .phoneInput {
+        width: 100%;
+        opacity: 1;
+        border: 0;
+        color: white;
+        border-radius: 18px;
+        background-color: rgba(255, 255, 255, 0.3);
+        &::placeholder {
+            color: black;
+        }
+    }
+    .submitButton {
+        width: 50%;
+    }
+    .exploreButton{
+        background-color: transparent !important;
+        width: 60%;
+        color:var(--white) !important;
+        border: 1px solid var(--white);
+        @include for-size(phone-only){
+            width: 100%;
+        }
+        @include for-size(tablet-portrait-up){
+            width: 100%;
+        }
+    }
+    .socialIconBox {
+        gap: 20px;
+        .socialIcon {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 7px;
+            background-color: rgba(255, 255, 255, 0.3);
+            object-fit: scale-down;
+            cursor: pointer;
+        }
+    }
+    .fieldWidth {
+        width: 70%;
+    }
+    .submitButton {
+        width: 60%;
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+        font-size: 1.2rem !important;
+    }
+    @include for-size(phone-only) {
+        margin-bottom: 3rem;
+        .submitButton,
+        .fieldWidth {
+            width: 100%;
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: 3rem;
+        .submitButton,
+        .fieldWidth {
+            width: 100%;
+        }
+    }
+    @include for-size(big-desktop-up) {
+        .title {
+            font-size: 1.6rem !important;
+            margin-top: 1.5rem !important;
+        }
+        .socialIconBox {
+            gap: 20px;
+            padding: 1.5rem 0 !important;
+            .socialIcon {
+                width: 80px;
+                height: 80px;
+                padding: 10px;
+            }
+        }
+        .submitButton {
+            height: 50px !important;
+            margin-bottom: 2rem !important;
+        }
+        .phoneInput {
+            height: 50px;
+            border-radius: 30px;
+        }
+        .phoneNumberLabel {
+            margin-bottom: 1rem !important;
+        }
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1rem !important;
+            margin-top: 1rem !important;
+        }
+    }
+}
+@include for-size(big-desktop-up) {
+    .mainHeading {
+        font-size: 1.8rem !important;
+        margin-bottom: 0.9rem !important;
+    }
+}

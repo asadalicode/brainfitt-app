@@ -1,0 +1,17 @@
+@mixin selected-card {
+    background-color: var(--white);
+    span {
+        color: #707070;
+    }
+}
+.card {
+    background-color: rgba(253, 250, 250, 0.4);
+    padding: 1rem;
+    border-radius: 10px;
+    &:hover {
+        @include selected-card();
+    }
+}
+.selectedCard {
+    @include selected-card();
+}

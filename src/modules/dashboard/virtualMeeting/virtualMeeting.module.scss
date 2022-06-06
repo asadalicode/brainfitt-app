@@ -1,0 +1,170 @@
+@import "../../../theme/mixings.scss";
+
+@mixin layout {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    @include for-size(phone-only) {
+        width: 95%;
+        margin: auto;
+    }
+    .header {
+        position: relative;
+        @include for-size(phone-only) {
+            justify-content: center;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            .backArrow {
+                position: absolute;
+                left: 2%;
+                top: -0.3rem;
+            }
+        }
+        @include for-size(tablet-portrait-up) {
+            margin-left: 0 !important;
+            justify-content: center;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            .backArrow {
+                position: absolute;
+                left: 2%;
+                top: -0.3rem;
+            }
+        }
+        .title {
+            @include for-size(phone-only) {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+    .contentContainer {
+        width: 60%;
+        height: 82vh;
+        padding-bottom: 2%;
+        overflow-y: scroll;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 80%;
+            .whiteBtn {
+                margin-top: 2rem;
+                width: 49%;
+            }
+        }
+        @include for-size(desktop-up) {
+            .whiteBtn {
+                position: fixed;
+                top: 89vh;
+                right: 8%;
+            }
+        }
+        @include for-size(ipad-pro) {
+            .whiteBtn {
+                position: fixed;
+                top: 89vh;
+                right: 8%;
+                padding: 8px 15px !important;
+            }
+        }
+        @include for-size(tablet-landscape-up) {
+            .whiteBtn {
+                position: fixed;
+                top: 89vh;
+                right: 8%;
+            }
+        }
+        @include for-size(phone-only) {
+            width: 100%;
+        }
+
+        .outerContainer {
+            @include layout();
+            width: 60%;
+            @include for-size(phone-only) {
+                width: 100%;
+            }
+            .headerCount {
+                border-radius: 50%;
+                background-color: white;
+                height: 30px;
+                width: 30px;
+                color: var(--black);
+            }
+            .calender {
+                background-color: transparent !important;
+                border: none;
+                padding: 0.5rem;
+                margin: auto;
+                abbr {
+                    text-decoration: none !important;
+                }
+            }
+            .timeContainer {
+                padding: 1rem;
+                .date {
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 0.5rem;
+                    border-radius: 7px;
+                    border: 1px solid var(--white);
+                    span {
+                        font-size: 1rem;
+                        font-weight: 100;
+                    }
+                }
+                .timerPicker {
+                    span {
+                        font-weight: 100;
+                        padding:5px 10px;
+                    }
+                    // span:nth-child(2) {
+                    //     border: 2px solid var(--white);
+                    //     padding:5px 10px;
+                    //     border-radius: 15px;
+                    // }
+                    .selectedSlot {
+                        border: 2px solid var(--white);
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+        .meetingDetail {
+            @include layout();
+            border-radius: 10px;
+            width: 60%;
+            @include for-size(phone-only) {
+                width: 100%;
+            }
+            .title {
+                font-size: 0.9rem;
+            }
+            .titleValue {
+                font-weight: 100;
+                font-size: 0.8rem;
+                margin-left: 1rem;
+            }
+        }
+        .meetingLinkContainer {
+            @include layout();
+            width: 60%;
+            height: 330px;
+            @include for-size(phone-only) {
+                width: 100%;
+            }
+            span {
+                font-weight: 100;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.004" height="75" viewBox="0 0 75.004 75">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.503" cy="0.427" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fddb35"/>
+      <stop offset="0.482" stop-color="#fcd934"/>
+      <stop offset="0.655" stop-color="#fcd232"/>
+      <stop offset="0.779" stop-color="#fbc62e"/>
+      <stop offset="0.879" stop-color="#f9b528"/>
+      <stop offset="0.964" stop-color="#f89f21"/>
+      <stop offset="1" stop-color="#f7941e"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_56528" data-name="Group 56528" transform="translate(-2223.55 -4.146)">
+    <path id="Path_88001" data-name="Path 88001" d="M2298.552,41.644a37.5,37.5,0,1,1-37.5-37.5A37.5,37.5,0,0,1,2298.552,41.644Z" transform="translate(0 0)" fill="url(#radial-gradient)"/>
+    <path id="Path_88002" data-name="Path 88002" d="M2303.446,50.72A37.5,37.5,0,0,1,2243.967,81.1a40.073,40.073,0,0,0,58.624-35.509c0-1.2-.052-2.4-.162-3.579A37.433,37.433,0,0,1,2303.446,50.72Z" transform="translate(-4.892 -9.073)" fill="#fbd69e" style="mix-blend-mode: multiply;isolation: isolate"/>
+    <rect id="Rectangle_23816" data-name="Rectangle 23816" width="34.064" height="5.168" rx="2.584" transform="translate(2244.02 54.492)" fill="#87594a"/>
+    <rect id="Rectangle_23817" data-name="Rectangle 23817" width="10.968" height="5.168" rx="2.584" transform="translate(2242.62 30.833)" fill="#87594a"/>
+    <rect id="Rectangle_23818" data-name="Rectangle 23818" width="10.968" height="5.168" rx="2.584" transform="translate(2268.52 30.833)" fill="#87594a"/>
+  </g>
+</svg>

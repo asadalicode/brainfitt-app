@@ -1,0 +1,51 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("../../../assets/images/homeModule/reasonPageBg.png");
+    min-height: 100vh;
+    padding: 3rem 0;
+    .chooseCard {
+        width: 40%;
+        @include for-size(tablet-portrait-up) {
+            width: 60%;
+        }
+        @include for-size(phone-only) {
+            width: 100%;
+        }
+    }
+    .whiteButtonContainer {
+        margin-top: -5rem;
+        .button{
+            height: unset  !important;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 60%;
+            align-self: unset !important;
+            margin-top: 3rem;
+            .button {
+                width: 100%;
+            }
+            .whiteButtonArrow {
+                display: none;
+            }
+        }
+        @include for-size(phone-only) {
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+    .whiteButtonArrow {
+        width: 35px;
+        @include for-size(phone-only) {
+            display: none;
+        }
+    }
+    .spiner{
+        height: 80vh;
+    }
+}
+
+.googFormIFrame{
+    height: 88vh;
+    width: 100%;
+}

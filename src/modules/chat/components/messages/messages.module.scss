@@ -1,0 +1,65 @@
+@import "../../../../theme/mixings.scss";
+
+.container {
+    height: 100vh;
+    width: 95%;
+    margin-left: 2rem;
+    .header {
+        position: relative;
+        height: 100px;
+        .backArrow {
+            position: absolute;
+            left: 0px;
+        }
+    }
+    .messageContainer {
+        height: calc(100vh - 205px);
+        overflow-y: scroll;
+        margin-bottom: 1rem;
+        @include scrollbars(0.5rem, #cac8c8);
+    }
+    .inputContainer {
+        background-color: rgba(34, 33, 33, 0.4);
+        backdrop-filter: blur(8px);
+        padding: 1rem 2rem;
+        height: 70px;
+        // position: absolute;
+        // bottom: 0px;
+        width: 100%;
+        input {
+            flex: 1;
+            background: transparent;
+            outline: none;
+            border: none;
+            &::placeholder {
+                color: rgb(243, 243, 243);
+                letter-spacing: 1px;
+            }
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        width: 100%;
+        margin-left: 0;
+        .messageContainer {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin: 0;
+        }
+        .inputContainer {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+    @include for-size(phone-only) {
+        width: 100%;
+        margin-left: 0;
+        .messageContainer {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .inputContainer {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../../theme/mixings.scss";
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    h5 {
+        margin-top: 2rem;
+    }
+    .icon {
+        height: 100px;
+        width: 100px;
+        fill: white;
+        opacity: 0.6;
+    }
+}
+.selectedCard {
+    background-color: var(--white);
+    .icon {
+        fill: #707070;
+        opacity: 1;
+    }
+    h5 {
+        color: #707070;
+    }
+}

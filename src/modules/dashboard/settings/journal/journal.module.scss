@@ -1,0 +1,40 @@
+@import "../../../../theme/mixings.scss";
+.header {
+    position: relative;
+    .backArrow {
+        position: absolute;
+        left: 2px;
+        @include for-size(phone-only){
+            top: -5px;
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        position: unset;
+        .backArrow {
+            left: 4%;
+            top: -10px;
+        }
+    }
+}
+.journalCard {
+    border-bottom: 0.5px solid rgba(228, 228, 228, 0.3);
+    .avatar {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: rgba(228, 228, 228, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    .infoContainer {
+        padding-left: 1rem;
+        width: 80%;
+        .title {
+            font-size: 0.9rem;
+        }
+        .description {
+            font-size: 0.7rem;
+            font-weight: 100;
+            overflow-wrap: anywhere !important;
+        }
+    }
+}

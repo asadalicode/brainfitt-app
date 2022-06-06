@@ -1,0 +1,80 @@
+@import "../../../../theme/mixings.scss";
+
+.skip {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+}
+.mainContainer {
+    padding: 1.5rem;
+    .rightContainer {
+        background-position-y: -3px !important;
+        width: 98%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 21px;
+        background-size: cover;
+        height: 92vh;
+        .rightImage {
+            position: absolute;
+            z-index: -1;
+            border-radius: 16px !important;
+            height: 100%;
+            width: 100%;
+        }
+        @include for-size(phone-only) {
+            height: 100vh;
+            width: 100%;
+            background-position-x: -50px !important;
+        }
+        @include for-size(tablet-portrait-up) {
+            height: 100vh;
+            background-position-x: -30px !important;
+        }
+        .contentBox {
+            width: 78%;
+        }
+    }
+    .otpBgPosition{
+        @include for-size(phone-only) {            
+            background-position-x: -20rem !important;
+        }
+    }
+    @include for-size(phone-only) {
+        padding: 0 !important;
+        .rightContainer {
+            border-radius: 0 !important;
+            background-position-y: 0 !important;
+            .contentBox {
+                width: 98% !important;
+                margin: auto;
+            }
+        }
+        .leftContainer {
+            height: 100vh;
+            .skipButton {
+                margin: 0 2rem;
+            }
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        .rightContainer {
+            border-radius: 0 !important;
+            background-position-y: 0 !important;
+            .contentBox {
+                width: 70% !important;
+            }
+        }
+        .leftContainer {
+            height: 100vh;
+            .skipButton {
+                margin: 3rem 4rem;
+                .skip {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

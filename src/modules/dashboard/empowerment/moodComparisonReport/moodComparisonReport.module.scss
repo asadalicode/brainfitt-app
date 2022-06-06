@@ -1,0 +1,51 @@
+.header {
+    background-color: var(--white);
+    span {
+        color: var(--black);
+    }
+}
+.page {
+    width: 100%;
+    .container {
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .title {
+            color: var(--black);
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        .nameContainer {
+            align-items: center;
+            .nameLabel {
+                color: var(--black);
+                font-weight: bolder;
+                font-size: 1.1rem;
+            }
+            .name {
+                color: var(--black);
+            }
+        }
+        .moodContainer {
+            .title {
+                font-size: 1.2rem;
+            }
+        }
+        .emojiContainer {
+            gap: 13px;
+        }
+    }
+}
+.emojiBox {
+    width: 75px;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    .emojiName {
+        color: var(--black);
+        font-size: 0.9rem;
+        padding: 0px 2px;
+    }
+}

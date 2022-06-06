@@ -1,0 +1,32 @@
+{
+  "signupInfo": [
+    {
+      "phoneNumber": "3349514525",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "phoneNumber": "4564565454"
+    },
+    {
+      "id": 3,
+      "phoneNumber": "545"
+    },
+    {
+      "id": 4,
+      "phoneNumber": ""
+    },
+    {
+      "id": 5,
+      "phoneNumber": "4"
+    },
+    {
+      "id": 6,
+      "phoneNumber": "45654654"
+    },
+    {
+      "id": 7,
+      "phoneNumber": "512312"
+    }
+  ]
+}

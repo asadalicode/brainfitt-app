@@ -1,0 +1,16 @@
+.container {
+    .header {
+        background-color: white;
+        span {
+            color: var(--black);
+        }
+    }
+    .pdfContainer {
+        box-shadow: 0px -15px 10px -15px #00000029;
+        .ducumentPage {
+            > canvas {
+                width: 100% !important;
+            }
+        }
+    }
+}

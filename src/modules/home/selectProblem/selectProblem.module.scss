@@ -1,0 +1,38 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("../../../assets/images/homeModule/purchaseProgrambg.png");
+    min-height: 100vh;
+
+    .whiteButtonContainer {
+        margin-top: -2.9rem;
+        @include for-size(tablet-portrait-up) {
+            justify-content: center !important;
+            margin-top: 1rem;
+            button {
+                width: 70%;
+            }
+            .whiteButtonArrow {
+                display: none;
+            }
+        }
+    }
+    .whiteButtonArrow {
+        width: 35px;
+        @include for-size(phone-only) {
+            display: none;
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        .container {
+            width: 75%;
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .whiteButtonContainer {
+            width: 100%;
+        }
+    }
+}

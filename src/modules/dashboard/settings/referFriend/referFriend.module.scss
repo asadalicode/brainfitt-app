@@ -1,0 +1,83 @@
+.container {
+    .copyCode {
+        font-size: 0.6rem;
+        font-weight: 100;
+    }
+    .text {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    .personalCodeContainer {
+        padding: 0.5rem 1rem;
+        background: rgba(243, 242, 242, 0.3);
+        border-radius: 30px;
+        backdrop-filter: blur(13px);
+        border: 1px dashed var(--white);
+        > span {
+            font-size: 0.7rem;
+            line-break: anywhere;
+        }
+        .copy {
+            background-color: var(--white);
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            margin-left: 2.3rem;
+            > span {
+                color: var(--black);
+            }
+        }
+        .isCopyAlert{
+            color: rgb(0, 240, 0);
+            font-size: 11px;
+        }
+    }
+    .iconBox {
+        gap: 0.7rem;
+        .socialIconBox {
+            height: 44px;
+            width: 44px;
+            background: rgba(243, 242, 242, 0.66);
+            border-radius: 50%;
+            backdrop-filter: blur(13px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > svg {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    .howItWork {
+        .container {
+            .label {
+                background: rgba(243, 242, 242, 0.3);
+                height: 40px;
+                width: 40px;
+                backdrop-filter: blur(13px);
+            }
+        }
+    }
+    .statistic {
+        .statisticCard {
+            padding: 0.5rem 0.8rem;
+            background: rgba(243, 242, 242, 0.3);
+            border-radius: 10px;
+            backdrop-filter: blur(13px);
+            .left {
+                .avatar {
+                    background: rgba(243, 242, 242, 0.3);
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            .count{
+                background-color: var(--white);
+                padding: 0.2rem 0.9rem;
+                border-radius: 30px;
+                color: var(--black);
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

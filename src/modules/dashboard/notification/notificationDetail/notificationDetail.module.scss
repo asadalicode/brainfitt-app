@@ -1,0 +1,89 @@
+@import '../../../../theme/mixings.scss';
+
+.container {
+    font-weight: 100 !important;
+    .bannerContainer{
+        position: relative;
+        .mainImage {
+            height: 250px;
+            width: 100%;
+        }
+        .title{
+            position: absolute;
+            right: 3%;
+            top: 3%;
+            font-weight: 500;
+        }
+    }
+    h5 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    .openAudioButton {
+
+        @include for-size(phone-only) {
+            width: 50% !important;
+        }
+    }
+    .instruction {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+    }
+    ol {
+        li {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .videoInstruction {
+        font-size: 0.75rem;
+        text-align: center;
+        span {
+            font-size: 0.84rem;
+            border-bottom: 1px solid var(--white);
+        }
+    }
+    .note {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+    .video {
+        width: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+        height: 230px;
+    }
+    .videoContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .playIcon {
+        position: absolute;
+        top: 30%;
+    }
+    .graphContainer {
+        .graphTitle {
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+        img {
+            height: 200px;
+            width: 100%;
+        }
+    }
+    .selfAssessment{
+        font-size: 0.76rem;
+        margin-top: 4px;
+
+    }
+    .underLine{
+        border-bottom: 1px solid var(--white);
+    }
+}

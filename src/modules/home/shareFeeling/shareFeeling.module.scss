@@ -1,0 +1,60 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    min-height: 100vh;
+    background-color: #59738b;
+    @include full-screen-background-image("");
+    padding: 0 !important;
+    padding-top: 5rem !important;
+    .titleBar {
+        width: 70%;
+        margin-left: auto;
+        @include for-size(phone-only) {
+            width: 100%;
+            > div {
+                flex-direction: column;
+                align-items: center;
+            }
+            .title {
+                width: 100% !important;
+            }
+        }
+        span {
+            margin-right: 10%;
+        }
+    }
+    .emojiContainer {
+        height: 63vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .filterEmojies{
+            gap: 10px;
+        }
+        .emojiBox {
+            margin-right: 0.8rem !important;
+            width: 8%;
+            @include for-size(tablet-portrait-up) {
+                width: 15%;
+            }
+            @include for-size(phone-only) {
+                width: 28%;
+            }
+        }
+    }
+    .whiteButtonContainer {
+        margin-right: 3rem !important;
+        @include for-size(phone-only) {
+            width: 90%;
+            margin: auto !important;
+            align-self: unset !important;
+            button {
+                justify-content: center !important;
+            }
+        }
+    }
+    .whiteButtonArrow {
+        width: 35px;
+    }
+}

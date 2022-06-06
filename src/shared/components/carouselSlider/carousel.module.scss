@@ -1,0 +1,33 @@
+@import "../../../theme/mixings.scss";
+.indicatorIcon {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 6px;
+    .activeIndicator {
+        width: 20px;
+    }
+}
+.dot {
+    color: red;
+}
+.slide {
+    margin: 0 10px 0 10px;
+    img {
+        width: 40%;
+        @include for-size(phone-only) {
+            width: 60%;
+        }
+    }
+    .description {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        color: var(--black);
+        font-weight: 700;
+        width: 65%;
+        @include for-size(phone-only) {
+            width: 100%;
+        }
+    }
+}

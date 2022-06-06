@@ -1,0 +1,48 @@
+@import "../../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("../../../assets/images/homeModule/selectMultipleProblemBg.png");
+    min-height: 100vh;
+
+    .contentContainer {
+        width: 90%;
+        margin-left: auto;
+        .whiteButtonContainer {
+            margin-right: -5px;
+            .whiteButtonArrow {
+                width: 35px;
+            }
+        }
+    }
+    .nextButton{
+        text-transform: none;
+    }
+    @include for-size(tablet-portrait-up) {
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+        .contentContainer {
+            width: 80%;
+            margin: auto;
+            .whiteButtonContainer {
+                width: 80%;
+                margin: auto;
+                justify-content: center !important;
+                .nextButton {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include for-size(phone-only) {
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+        .contentContainer {
+            width: 90%;
+            margin: auto;
+        }
+    }
+}

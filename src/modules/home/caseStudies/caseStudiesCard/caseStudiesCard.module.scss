@@ -1,0 +1,52 @@
+@import ".../../../../../../theme/mixings.scss";
+
+.carouselItem {
+    position: relative;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .playIcon {
+        position: absolute;
+        top: 30%;
+    }
+    h5 {
+        font-weight: 100 !important;
+        font-size: 1.1rem !important;
+    }
+    .title {
+        font-size: 1.5rem !important;
+        width: 80%;
+    }
+    .videoContainer {
+        width: 95%;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .video {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        height: 250px;
+    }
+    @include for-size(tablet-portrait-up) {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem !important;
+    }
+    @include for-size(phone-only) {
+        margin-bottom: 2rem !important;
+        .video {
+            width: 100%;
+        }
+    }
+}

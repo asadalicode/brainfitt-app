@@ -1,0 +1,16 @@
+.container {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    .timer {
+        color: #ff0000;
+    }
+    .title {
+        color: var(--black);
+        font-weight: 500;
+    }
+}
+.buyButtonContainer {
+    width: 80% !important;
+    margin: auto;
+}

@@ -1,0 +1,26 @@
+@import '../../../../theme/mixings.scss';
+
+.header {
+    position: relative;
+    .backArrow {
+        position: absolute;
+        left: 2px;
+    }
+    @include for-size(tablet-portrait-up){
+        position: unset;
+        .backArrow {
+            left: 2rem;
+        }
+    }
+}
+.managePeople {
+    padding: 0.7rem;
+    background: rgba(243, 242, 242, 0.3);
+    border-radius: 15px;
+    width: 48%;
+    backdrop-filter: blur(13px);
+    span {
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+    }
+}

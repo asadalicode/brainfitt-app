@@ -1,0 +1,140 @@
+@import "../../../theme/mixings.scss";
+
+.outletContainer {
+    padding-left: 2rem;
+}
+.appBarContainer {
+    background: transparent !important;
+    z-index: 10;
+    height: 100px;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    .appBar {
+        width: 52%;
+        margin-left: auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2rem;
+    }
+}
+.mainContainerPadding {
+    padding-bottom: 8rem !important;
+
+    @include for-size(tablet-portrait-up) {
+        padding-bottom: 12rem !important;
+    }
+    @include for-size(phone-only) {
+        padding-bottom: 12rem !important;
+    }
+}
+
+.mainContainer {
+    padding: 2rem;
+    padding-bottom: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-left: 2rem !important;
+    // height: 97vh;
+    // overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .contentContainer {
+        // background-color: rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(15.5px);
+        border-radius: 15px;
+        .containerheader{
+            width: 90%;
+            margin: auto;
+            padding-top: 10px;
+        }
+        .mediaPlayerBox {
+            height: 155px;
+            border-radius: 15px 15px 0 0;
+            background: url("../../../assets/images/dashboardModule/home/mediaPlayer.png");
+            background-position: right 0% bottom 23%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include for-size(desktop-up) {
+                height: 23vh;
+            }
+            .mediaPlayer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60%;
+            }
+            .timer {
+                background: rgba(14, 11, 11, 0.25);
+                backdrop-filter: blur(20px);
+                border-radius: 10px;
+                padding: 4px 15px 4px 15px;
+                height: 30px;
+                width: 70px;
+                span {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .groupButton {
+            button {
+                margin-right: 0.6rem !important;
+                color: var(--white);
+                background-color: rgba(255, 255, 255, 0.3);
+                opacity: 1;
+                font-size: 0.7rem;
+                padding-top: 0.3rem !important;
+                padding-bottom: 0.3rem !important;
+                border-radius: 2rem !important;
+                backdrop-filter: blur(30px);
+            }
+        }
+        .summaryBox {
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 15px;
+            justify-content: center;
+            .icon {
+                height: 5vh;
+                width: 4vw;
+                @include for-size(phone-only) {
+                    height: 30px !important;
+                    width: unset;
+                }
+            }
+            @include for-size(desktop-up) {
+                height: 21vh;
+                @include for-size(big-desktop-up){
+                    height: 28vh;
+                }
+            }
+        }
+        .growthGraph {
+            margin-top: 4.5rem;
+        }
+    }
+    .statisticData {
+        @include for-size(desktop-up) {
+            height: 53vh;
+        }
+    }
+    @include for-size(tablet-portrait-up) {
+        width: 70% !important;
+        // padding-bottom: 12rem;
+    }
+    @include for-size(phone-only) {
+        width: 95% !important;
+        padding-left: 1rem !important;
+        // padding-bottom: 12rem !important;
+        &::-webkit-scrollbar {
+            display: none !important;
+        }
+    }
+}
+
+.mainContainerHeight {
+    height: 85vh !important;
+    padding-bottom: 5rem;
+}

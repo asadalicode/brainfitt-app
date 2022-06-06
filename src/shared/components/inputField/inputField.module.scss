@@ -1,0 +1,23 @@
+.container {
+    .inputHeight {
+        height: 50px;
+    }
+    .input {
+        background: rgba(243, 242, 242, 0.3);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        backdrop-filter: blur(13px);
+        padding-left: 0.8rem;
+        font-size: 0.9rem;
+        opacity: 1;
+        color: var(--white);
+        &::placeholder {
+            // color: var(--white);
+            color: rgb(158, 158, 158);
+        }
+    }
+    .label {
+        font-size: 0.7rem;
+    }
+}

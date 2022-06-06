@@ -1,0 +1,125 @@
+@import "../../../../theme/mixings.scss";
+
+.container {
+    .contentContainer {
+        height: 87vh;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none !important;
+        }
+        padding-bottom: 5rem;
+        @include for-size(phone-only) {
+            padding-bottom: 10rem;
+        }
+        @include for-size(tablet-portrait-up) {
+            padding-bottom: 8rem;
+        }
+        .profileAvatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: rgba(243, 242, 242, 0.3);
+            backdrop-filter: blur(13px);
+            margin-bottom: 1rem;
+            .cameraIcon {
+                position: absolute;
+                bottom: -2px;
+                right: -1px;
+                height: 30px;
+                width: 30px;
+                border: 1px solid var(--white);
+                background: rgba(243, 242, 242, 0.3);
+                backdrop-filter: blur(13px);
+            }
+        }
+        .inputError{
+            display: flex;
+            justify-content: end;
+            font-size: 11px;
+            color: #ff5959;
+            position: relative;
+            top: -15px;
+        }
+        .lable{
+            font-size: 0.7rem;
+            // position: relative;
+            // bottom: -10px;
+        }
+        .calender{
+            background-color: transparent !important;
+                border: none;
+                padding: 0.5rem;
+                margin: auto;
+                abbr {
+                    text-decoration: none !important;
+                }
+        }
+        .calendarInput {
+            background: rgba(243, 242, 242, 0.3);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            -webkit-backdrop-filter: blur(13px);
+            backdrop-filter: blur(13px);
+            padding-left: 0.8rem;
+            height: 50px;
+            font-size: 0.9rem;
+            opacity: 1;
+            color: var(--white);
+            width: 420px;
+            margin-bottom: 20px;
+        }
+        .phoneNumberLabel {
+            font-size: 0.9rem;
+            font-weight: 100;
+            width: 60% !important;
+            div {
+                div {
+                    div {
+                        margin-top: 8px !important;
+                        color: white !important;
+                      }
+                }
+            }
+        }
+        .phoneInput {
+            width: 420px;
+            height: 50px;
+            opacity: 1;
+            border: 0;
+            color: white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            &::placeholder {
+                color: rgba(243, 242, 242, 0.3);
+            }
+        }
+        .submitButton {
+            font-size: 0.8rem !important;
+            width: 70%;
+            color: rgb(27, 24, 24) !important;
+        }
+        .disableButton {
+            font-size: 0.8rem !important;
+            width: 70%;
+            color: rgb(192, 192, 192) !important;
+        }
+        .selectOption{
+            background-color: rgb(99, 99, 99) !important;
+            font-size: 1.1rem !important;
+            :hover{
+                background-color: #484848 !important;
+            }
+        }
+        .selectedDisableOption{
+            background-color: rgb(160, 159, 159) !important;
+            font-size: 0.9rem !important;
+        }
+    }
+    @include for-size(phone-only) {
+        padding-bottom: 3rem;
+    }
+}

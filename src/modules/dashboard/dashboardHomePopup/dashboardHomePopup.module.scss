@@ -1,0 +1,65 @@
+.dialog{
+    backdrop-filter: blur(3px);
+}
+.container{
+    font-weight: 100 !important;
+    margin-bottom: 15px;
+    
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+        .closeIcon{
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+    .inputField{
+        margin-left: 20px;
+        margin-right: 20px;
+        .inputFieldColor{
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            backdrop-filter: blur(3px) !important;
+            border: 1px solid rgb(255, 255, 255) !important
+        }
+    }
+
+    .createPlaylist {
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        backdrop-filter: blur(1px) !important;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 1px solid rgb(255, 255, 255)
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        min-width: 35px;
+        height: 3px;
+        background: #dddddd;
+        outline: none;
+        border-radius: 10px;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+        // margin-top: 18px;
+        margin: 22px 5px 0px 5px;
+        cursor: pointer;
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 15px;
+          height: 15px;
+          background: #ffffff;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    // .buttonStyle{
+        // position: relative;
+        // right: 20px;
+    // }
+}

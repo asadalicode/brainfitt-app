@@ -1,0 +1,12 @@
+.createPlaylist {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(1px) !important;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    > span {
+        flex: 1;
+    }
+}

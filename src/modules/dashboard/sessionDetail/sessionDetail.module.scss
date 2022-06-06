@@ -1,0 +1,27 @@
+@import "../../../theme/mixings.scss";
+
+.container {
+    width: 65%;
+    height: 75vh;
+    overflow-y: scroll;
+    margin: auto;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    padding-bottom: 5rem;
+    @include for-size(phone-only) {
+        width: 90%;
+        padding-bottom: 10rem;
+        p {
+            text-align: left;
+        }
+    }
+    @include for-size(tablet-portrait-up){
+        padding-bottom: 8rem;
+    }
+}

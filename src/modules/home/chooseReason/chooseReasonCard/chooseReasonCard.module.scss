@@ -1,0 +1,31 @@
+@import "../../../../theme/mixings.scss";
+
+.card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    opacity: 1;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    flex-direction: column;
+    max-height: 22vh;
+    @include for-size(phone-only) {
+        width: 100%;
+    }
+    .cardImage {
+        fill: var(--white);
+    }
+}
+.selectedCard{
+    background-color: var(--white);
+    .cardImage {
+        fill: #707070;
+        opacity: 1 !important;
+    }
+    > h5 {
+        color: #707070;
+    }
+}

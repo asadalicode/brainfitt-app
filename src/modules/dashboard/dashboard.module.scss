@@ -1,0 +1,78 @@
+@import "../../theme/mixings.scss";
+
+.mainContainer {
+    @include full-screen-background-image("");
+    min-height: 100vh;
+    transition: background-image 1s;
+    .container {
+        @include for-size(phone-only) {
+            display: block;
+        }
+        .outletContainer {
+            width: 80%;
+            @include for-size(phone-only) {
+                width: 100%;
+            }
+            @include for-size(tablet-portrait-up) {
+                width: 100%;
+            }
+        }
+        .floatingButtonMenu {
+            position: absolute;
+            bottom: 1%;
+            right: 2%;
+            z-index: 9999;
+            @include for-size(tablet-portrait-up) {
+                bottom: 9%;
+            }
+            @include for-size(phone-only) {
+                bottom: 10%;
+            }
+            .activeIcon {
+                transform: rotate(180deg);
+            }
+            .floatingButonn {
+                background-color: var(--white);
+            }
+        }
+        .floatingBtnPosition {
+            bottom: 18%;
+            @include for-size(tablet-portrait-up) {
+                bottom: 10%;
+            }
+            @include for-size(phone-only) {
+                bottom: 26%;
+            }
+        }
+    }
+    .bottomAudioPlayer {
+        background-color: rgba(29, 29, 29, 0.6);
+        backdrop-filter: blur(8px);
+        .content {
+            margin-left: auto;
+            width: 80%;
+        }
+        @include for-size(phone-only) {
+            bottom: 9%;
+            left: 7px;
+            right: 0px !important;
+            width: 96%;
+            border-radius: 1rem;
+            border: 2px solid var(--white);
+            .content {
+                width: 100% !important;
+            }
+        }
+        @include for-size(tablet-portrait-up) {
+            bottom: 8%;
+            right: 0px !important;
+            width: 80%;
+            left: 10%;
+            border-radius: 1rem;
+            border: 2px solid var(--white);
+            .content {
+                width: 100% !important;
+            }
+        }
+    }
+}
